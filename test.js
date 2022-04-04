@@ -7,5 +7,13 @@ test('if the number is even', () => {
   });
   
 test('if the number is not even', () => {
-expect(isEven(1)).toBe(false);
+    expect(isEven(1)).toBe(false);
 });
+
+test('if the parameter is a string', () => {
+    expect(isEven("abc")).toBe(false);
+});
+
+test('if the parameter is a string and containts a number', () => {
+    expect(isEven("12")).toBe(true);
+  });
